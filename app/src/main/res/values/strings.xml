@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Milelog</string>
+    <string name="welcome_title">Mile Log</string>
+    <string name="welcome_message">Your journey, every mile tracked.\nReady to hit the road?</string>
+    <string name="get_started">Get Started</string>
+    <string name="my_trips">My Trips</string>
 </resources>
