@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TripListActivity"
+            android:exported="false"
+            android:label="My Trips" />
     </application>
 
 </manifest>
