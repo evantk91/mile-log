@@ -25,6 +25,11 @@
             android:name=".TripListActivity"
             android:exported="false"
             android:label="My Trips" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/login_title"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
