@@ -5,4 +5,8 @@
     <string name="get_started">Get Started</string>
     <string name="my_trips">My Trips</string>
     <string name="welcome_image_description">VW bus on a road trip</string>
+    <string name="login_title">Log In</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="log_in">Log In</string>
 </resources>
