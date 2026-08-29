@@ -4,4 +4,5 @@
     <string name="welcome_message">Your journey, every mile tracked.\nReady to hit the road?</string>
     <string name="get_started">Get Started</string>
     <string name="my_trips">My Trips</string>
+    <string name="welcome_image_description">VW bus on a road trip</string>
 </resources>
