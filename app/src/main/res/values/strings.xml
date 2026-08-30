@@ -16,4 +16,6 @@
     <string name="distance_hint">Distance (miles)</string>
     <string name="save_trip">Save Trip</string>
     <string name="add_trip">Add Trip</string>
+    <string name="starting_location_required">Starting location is required</string>
+    <string name="ending_location_required">Ending location is required</string>
 </resources>
