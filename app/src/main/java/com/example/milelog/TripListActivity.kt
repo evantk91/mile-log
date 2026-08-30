@@ -2,10 +2,13 @@ package com.example.milelog
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.milelog.data.TripRepository
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class TripListActivity : AppCompatActivity() {
@@ -25,6 +28,13 @@ class TripListActivity : AppCompatActivity() {
         addTripFab.setOnClickListener {
             val intent = Intent(this, AddTripActivity::class.java)
             startActivity(intent)
+        }
+
+        val tripListContainer: LinearLayout = findViewById(R.id.tripListContainer)
+        for (trip in TripRepository.instance.getAllTrips()) {
+            val tripTextView = TextView(this)
+            tripTextView.text = "${trip.startingLocation} -> ${trip.endingLocation} on ${trip.date}, ${trip.distanceMiles} mi"
+            tripListContainer.addView(tripTextView)
         }
     }
 }
