@@ -30,6 +30,11 @@
             android:exported="false"
             android:label="@string/login_title"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddTripActivity"
+            android:exported="false"
+            android:label="@string/add_trip_title"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
