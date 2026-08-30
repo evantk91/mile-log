@@ -1,18 +1,17 @@
 package com.example.milelog
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.button.MaterialButton
 
-class TripListActivity : AppCompatActivity() {
+class AddTripActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_trip_list)
+        setContentView(R.layout.activity_add_trip)
 
         val rootView = findViewById<android.view.View>(R.id.main)
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->
@@ -21,10 +20,9 @@ class TripListActivity : AppCompatActivity() {
             insets
         }
 
-        val addTripFab: FloatingActionButton = findViewById(R.id.addTripFab)
-        addTripFab.setOnClickListener {
-            val intent = Intent(this, AddTripActivity::class.java)
-            startActivity(intent)
+        val saveTripButton: MaterialButton = findViewById(R.id.saveTripButton)
+        saveTripButton.setOnClickListener {
+            // TODO: read the input fields and persist the trip once a Trip data class exists.
         }
     }
 }

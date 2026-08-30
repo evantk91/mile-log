@@ -9,4 +9,11 @@
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="log_in">Log In</string>
+    <string name="add_trip_title">Add Trip</string>
+    <string name="starting_location_hint">Starting Location</string>
+    <string name="ending_location_hint">Ending Location</string>
+    <string name="date_hint">Date</string>
+    <string name="distance_hint">Distance (miles)</string>
+    <string name="save_trip">Save Trip</string>
+    <string name="add_trip">Add Trip</string>
 </resources>
