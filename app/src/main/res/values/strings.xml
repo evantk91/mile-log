@@ -21,4 +21,6 @@
     <string name="trip_row_route_separator">→</string>
     <string name="trip_row_distance_format">%1$.1f mi</string>
     <string name="back">Back</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_trips">Trips</string>
 </resources>
