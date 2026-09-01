@@ -2,8 +2,8 @@ package com.example.milelog
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,10 +31,11 @@ class TripListActivity : AppCompatActivity() {
         }
 
         val tripListContainer: LinearLayout = findViewById(R.id.tripListContainer)
+        val inflater = LayoutInflater.from(this)
         for (trip in TripRepository.instance.getAllTrips()) {
-            val tripTextView = TextView(this)
-            tripTextView.text = "${trip.startingLocation} -> ${trip.endingLocation} on ${trip.date}, ${trip.distanceMiles} mi"
-            tripListContainer.addView(tripTextView)
+            val tripRow = inflater.inflate(R.layout.item_trip_row, tripListContainer, false)
+            tripRow.bindTrip(trip)
+            tripListContainer.addView(tripRow)
         }
     }
 }
