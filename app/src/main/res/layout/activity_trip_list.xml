@@ -21,9 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:id="@+id/tripScroll"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,58 +51,5 @@
         app:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- DEBUG: visualizes the systemBars insets applied as padding in TripListActivity.
-         Sized in code to the exact pixel values returned by
-         insets.getInsets(WindowInsetsCompat.Type.systemBars()). Remove once done exploring. -->
-    <View
-        android:id="@+id/systemBarCueTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#8000C853"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/systemBarCueBottom"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#80D50000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/systemBarCueStart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#802962FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/systemBarCueEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#80FFD600"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/insetsDebugText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CC000000"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
-        android:textColor="@color/white"
-        android:textSize="11sp"
-        android:fontFamily="monospace"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="systemBars insets (px): L=0 T=0 R=0 B=0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

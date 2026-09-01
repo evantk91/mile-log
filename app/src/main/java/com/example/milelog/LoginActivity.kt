@@ -15,9 +15,11 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val rootView = findViewById<android.view.View>(R.id.main)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->
+        val contentContainer = findViewById<android.view.View>(R.id.contentContainer)
+
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { _, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            contentContainer.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
