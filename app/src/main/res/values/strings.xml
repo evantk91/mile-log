@@ -18,4 +18,6 @@
     <string name="add_trip">Add Trip</string>
     <string name="starting_location_required">Starting location is required</string>
     <string name="ending_location_required">Ending location is required</string>
+    <string name="trip_row_route_separator">→</string>
+    <string name="trip_row_distance_format">%1$.1f mi</string>
 </resources>
