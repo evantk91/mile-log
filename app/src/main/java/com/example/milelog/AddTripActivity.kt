@@ -1,6 +1,8 @@
 package com.example.milelog
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +27,13 @@ class AddTripActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val backButton: ImageButton = findViewById(R.id.backButton)
+        backButton.setOnClickListener {
+            val intent = Intent(this, TripListActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
         val startingLocationEditText: TextInputEditText = findViewById(R.id.startingLocationEditText)

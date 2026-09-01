@@ -20,4 +20,5 @@
     <string name="ending_location_required">Ending location is required</string>
     <string name="trip_row_route_separator">→</string>
     <string name="trip_row_distance_format">%1$.1f mi</string>
+    <string name="back">Back</string>
 </resources>
